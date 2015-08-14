@@ -17,7 +17,6 @@ for (var i = 0, n = 3; i < n; i++) {
     testContainers[i].style.backgroundColor = 'red';
     testContainers[i].style.margin = i * 50 + 'px';
     testContainers[i].style.padding = i * 5 + 'px';
-    testContainers[i].style.padding = i * 5 + 'px';
 
     testContainers[i].addEventListener('click', onTestContainerClicked);
     testContainersParent.appendChild(testContainers[i]);
