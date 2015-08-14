@@ -1,6 +1,6 @@
 # ev-pos
 
-[![experimental](http://badges.github.io/stability-badges/dist/experimental.svg)](http://github.com/badges/stability-badges)
+[![unstable](http://badges.github.io/stability-badges/dist/unstable.svg)](http://github.com/badges/stability-badges)
 
 > relative position of mouse/touch events to element
 
@@ -8,22 +8,30 @@
 
 `npm i ev-pos`
 
-[![NPM](https://nodei.co/npm/ev-pos.png)](https://www.npmjs.com/package/ev-pos)
+[![NPM](https://nodei.co/npm/ev-pos.png?downloads=true)](https://www.npmjs.com/package/ev-pos)
 
-```
+```js
 var evPos = require('ev-pos');
 
 document.querySelector('.some-element').addEventListener('click', function(ev){
-    console.log('relative to currentTarget', evPos(ev));
-    console.log('relative to document.body:', evPos(ev, document.body));
+    //position relative to ev.currentTarget
+    var p1 = evPos(ev);
+    //position relative to document.body
+    var p2 = evPos(ev, document.body);
 });
 ```
 
 ## API
 
-** evPos(event, [toElement]) **
+**evPos(event, [toElement])**
 
-*if toElement is undefined it defaults to ev.currentTarget*
+*toElement* defaults to `ev.currentTarget`
+
+## Example
+
+```sh
+npm i && npm run test-visual
+```
 
 
 ## Licence
