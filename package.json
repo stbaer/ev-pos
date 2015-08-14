@@ -1,0 +1,39 @@
+{
+  "name": "ev-pos",
+  "version": "0.0.1",
+  "main": "./src/index.js",
+  "description": "relative position of mouse/touch events to element",
+  "author": "stbaer <stbaer.pub@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/stbaer/ev-pos",
+  "repository": "stbaer/ev-pos",
+  "keywords": [
+    "mouse",
+    "touch",
+    "event",
+    "offset",
+    "relative",
+    "position",
+    "clientX",
+    "clientY",
+    "offsetX",
+    "offsetY",
+    "pageX",
+    "pageY",
+    "getBoundingClientRect"
+  ],
+  "scripts": {
+    "test": "browserify test/unit/*.js | browser-run | faucet",
+    "test-visual": "beefy test/visual/visualtest.js --live"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "browser-run": "^2.1.0",
+    "faucet": "latest",
+    "browserify": "^11.0.1",
+    "tape": "^4.0.1",
+    "testling": "^1.7.1",
+    "uglifyjs": "latest",
+    "watchify": "^3.3.1"
+  }
+}
