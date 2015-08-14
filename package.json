@@ -1,6 +1,6 @@
 {
   "name": "ev-pos",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "./src/index.js",
   "description": "relative position of mouse/touch events to element",
   "author": "stbaer <stbaer.pub@gmail.com>",
