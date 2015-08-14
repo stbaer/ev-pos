@@ -33,6 +33,7 @@ document.querySelector('.some-element').addEventListener('click', function(ev){
 npm i && npm run test-visual
 ```
 
+*(expects [beefy](https://github.com/chrisdickinson/beefy) to be installed globally)*
 
 ## Licence
 

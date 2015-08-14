@@ -1,3 +1,5 @@
+'use strict';
+
 /**
  * Returns true if the type is 'number' and it's not NaN
  * @param  {*} val
@@ -15,7 +17,6 @@ var isNum = function(val) {
  * @return {object}                               {x, y}
  */
 var getRelativePosition = function(ev, toElement) {
-
     toElement = toElement || toElement.currentTarget;
 
     var toElementBoundingRect = toElement.getBoundingClientRect(),

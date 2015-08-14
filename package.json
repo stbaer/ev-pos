@@ -23,17 +23,17 @@
     "getBoundingClientRect"
   ],
   "scripts": {
+    "jshint": "jshint --reporter=node_modules/jshint-stylish src/*.js",
     "test": "browserify test/unit/*.js | browser-run | faucet",
     "test-visual": "beefy test/visual/visualtest.js --live"
   },
   "dependencies": {},
   "devDependencies": {
-    "browser-run": "^2.1.0",
+    "browser-run": "latest",
+    "browserify": "latest",
     "faucet": "latest",
-    "browserify": "^11.0.1",
-    "tape": "^4.0.1",
-    "testling": "^1.7.1",
-    "uglifyjs": "latest",
-    "watchify": "^3.3.1"
+    "jshint": "latest",
+    "jshint-stylish": "^2.0.1",
+    "tape": "latest"
   }
 }
