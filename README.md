@@ -1,6 +1,6 @@
 # ev-pos
 
-[![unstable](http://badges.github.io/stability-badges/dist/unstable.svg)](http://github.com/badges/stability-badges)
+[![stable](http://badges.github.io/stability-badges/dist/stable.svg)](http://github.com/badges/stability-badges)
 
 > relative position of mouse/touch events to element
 
@@ -10,7 +10,7 @@
 
 [![NPM](https://nodei.co/npm/ev-pos.png?downloads=true)](https://www.npmjs.com/package/ev-pos)
 
-```js
+```
 var evPos = require('ev-pos');
 
 document.querySelector('.some-element').addEventListener('click', function(ev){
