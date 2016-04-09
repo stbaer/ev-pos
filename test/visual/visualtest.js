@@ -2,6 +2,9 @@ var evPos = require('../../');
 var testContainersParent = document.createElement('div');
 var testContainers = [];
 
+var headline = document.createElement('h1');
+headline.innerText = 'Click the red areas and view the browser console output';
+
 testContainersParent.style.display = 'block';
 testContainersParent.style.padding = '10px';
 testContainersParent.style.width = '600px';
@@ -23,6 +26,7 @@ for (var i = 0, n = 3; i < n; i++) {
 
 }
 
+document.body.appendChild(headline);
 document.body.appendChild(testContainersParent);
 
 function onTestContainerClicked(ev) {

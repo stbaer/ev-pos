@@ -1,12 +1,15 @@
 {
   "name": "ev-pos",
-  "version": "0.0.4",
+  "version": "1.0.0",
   "main": "./src/index.js",
   "description": "relative position of mouse/touch events to element",
   "author": "stbaer <stbaer.pub@gmail.com>",
   "license": "MIT",
   "homepage": "https://github.com/stbaer/ev-pos",
-  "repository": "stbaer/ev-pos",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stbaer/ev-pos.git"
+  },
   "keywords": [
     "mouse",
     "touch",
@@ -30,10 +33,26 @@
   "dependencies": {},
   "devDependencies": {
     "browser-run": "latest",
-    "browserify": "latest",
+    "watchify": "latest",
     "faucet": "latest",
-    "jshint": "latest",
-    "jshint-stylish": "^2.0.1",
+    "jshint-stylish": "latest",
     "tape": "latest"
+  },
+  "peerDependencies": {
+    "jshint": "latest"
+  },
+  "jshintConfig": {
+    "node": true,
+    "browser": true,
+    "esnext": true,
+    "bitwise": true,
+    "curly": true,
+    "eqeqeq": true,
+    "immed": true,
+    "newcap": true,
+    "noarg": true,
+    "undef": true,
+    "unused": "vars",
+    "strict": true
   }
 }

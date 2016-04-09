@@ -5,18 +5,18 @@
  * @param  {*} val
  * @return {boolean}
  */
-var isNum = function(val) {
+var isNum = function (val) {
     return typeof val === 'number' && !isNaN(val);
 };
 
 /**
  * Get the relative position from a mouse/touch event to an element
  *
- * @param  {event}   ev                           The mouse or touch event
- * @param  {element} [toElement=ev.currentTarget] The element
+ * @param  {Event}   ev                           The mouse or touch event
+ * @param  {Element} [toElement=ev.currentTarget] The element
  * @return {object}                               {x, y}
  */
-var getRelativePosition = function(ev, toElement) {
+var getRelativePosition = function (ev, toElement) {
     toElement = toElement || toElement.currentTarget;
 
     var toElementBoundingRect = toElement.getBoundingClientRect(),
