@@ -1,6 +1,6 @@
 {
   "name": "ev-pos",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "./src/index.js",
   "description": "relative position of mouse/touch events to element",
   "author": "stbaer <stbaer.pub@gmail.com>",
@@ -36,15 +36,13 @@
     "watchify": "latest",
     "faucet": "latest",
     "jshint-stylish": "latest",
-    "tape": "latest"
-  },
-  "peerDependencies": {
+    "tape": "latest",
     "jshint": "latest"
   },
   "jshintConfig": {
     "node": true,
     "browser": true,
-    "esnext": true,
+    "esnext": false,
     "bitwise": true,
     "curly": true,
     "eqeqeq": true,
